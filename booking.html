@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Book Tickets | FilmsBooking</title>
+  <link rel="stylesheet" href="booking-style.css">
+</head>
+<body>
+
+  <header>
+    <a href="index.html"><h1>FilmsBooking</h1></a>
+  </header>
+
+  <div class="container">
+    <h2>Book Your Tickets</h2>
+    <form>
+      <label for="name">Name</label>
+      <input type="text" id="name" placeholder="Enter your name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter your email" required>
+
+      <label for="movie">Select Movie</label>
+        <select id="movie" required>
+        <option value="">-- Select a movie --</option>
+        <option>Whiplash</option>
+        <option>Pulp Fiction</option>
+        <option>Parasite</option>
+        <option>The Wolf of Wall Street</option>
+        <option>The Social Network</option>
+        <option>Project X</option>
+        </select>
+        <p id="availability" style="color: #ccc; margin-top: 5px;"></p>
+
+      <label for="time">Show Time</label>
+      <select id="time" required>
+        <option>10:00 AM</option>
+        <option>1:00 PM</option>
+        <option>6:00 PM</option>
+        <option>9:00 PM</option>
+      </select>
+
+      <label for="tickets">Number of Tickets</label>
+      <input type="number" id="tickets" min="1" max="10" required>
+
+      <button type="submit">Confirm Booking</button>
+    </form>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
